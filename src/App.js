@@ -137,7 +137,9 @@ function App() {
         <div className="previous-opperand">
           {formatOperand(previousOperand)} {operation}
         </div>
-        <div className="current-opperand">{formatOperand(currentOperand)}</div>
+        <div className="current-opperand">
+          {formatOperand(currentOperand)}
+        </div>
       </div>
       <button className="span-two" onClick={()=> dispatch({type:ACTIONS.CLEAR})}>AC</button>
       <button onClick={()=> dispatch({type:ACTIONS.DELETE_DIGIT})}>DEL</button>
